@@ -26,14 +26,8 @@ def tri(fg="light", bg="dark"):
 
 screens = [
     Screen(
-        bottom=bar.Bar(
+        top=bar.Bar(
             [
-                widget.QuickExit(
-                    **base(bg='color5'),
-                    default_text='X',
-                    countdown_format='{}',
-                    
-                    ), 
                 widget.Spacer(),
                 widget.CurrentLayout(),
                 widget.GroupBox(

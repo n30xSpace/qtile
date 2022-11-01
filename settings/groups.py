@@ -2,7 +2,7 @@ from libqtile.config import Key, Group, Match
 from settings.keys import mod, keys, lazy
 
 __groups = {
-    1: Group("", matches=[Match(wm_class=["Google-chrome", "firefox"])]),
+    1: Group("", matches=[Match(wm_class=["google-chrome", "firefox"])]),
     2: Group("", matches=[Match(wm_class=["Code"])]),
     3: Group("", matches=[Match(wm_class=["Spotify"])]),
     4: Group("", matches=[Match(wm_class=["kitty"])]),
