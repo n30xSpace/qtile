@@ -26,7 +26,7 @@ def tri(fg="light", bg="dark"):
 
 screens = [
     Screen(
-        top=bar.Bar(
+        bottom=bar.Bar(
             [
                 widget.Spacer(),
                 widget.CurrentLayout(),
