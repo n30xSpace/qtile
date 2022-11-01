@@ -20,28 +20,33 @@ def tri(fg="light", bg="dark"):
     return widget.TextBox(
         **base(fg, bg),
         text="", # Icon: nf-oct-triangle_left
-        fontsize=45,
-        padding=-7
+        fontsize=58,
+        padding=-9
     )
 
 screens = [
     Screen(
-        top=bar.Bar(
+        bottom=bar.Bar(
             [
+                widget.QuickExit(
+                    **base(bg='color5'),
+                    default_text='X',
+                    countdown_format='{}',
+                    
+                    ), 
+                widget.Spacer(),
                 widget.CurrentLayout(),
-                
                 widget.GroupBox(
                     highlight_method='line'
                     ),
                 widget.Prompt(),
-                widget.Spacer(),             
                 widget.Chord(
                     chords_colors={
                         "launch": ("#ff0000", "#ffffff"),
                     },
                     name_transform=lambda name: name.upper(),
                 ),
-                widget.Systray(),
+                widget.Spacer(),
                 tri(fg='color6', bg='black'),
                 widget.PulseVolume(
                     **base(bg='color6'),
@@ -66,17 +71,10 @@ screens = [
                 widget.Clock(
                     **base(bg='color4'),
                     format='%d/%m-%H:%M'
-                    ),
-                tri(fg='color5', bg='color4'),
-                widget.QuickExit(
-                    **base(bg='color5'),
-                    default_text='', 
-                    countdown_format='{}',
-                    ),
-                    
-                
+                    ),                                                 
             ],
-            24,
+            30,
+            opacity=0.92,
         ),
     ),
 ]
