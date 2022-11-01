@@ -33,10 +33,13 @@ keys = [
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
 
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
-    Key([mod], "x", lazy.window.kill(), desc="Kill focused window"),
+    Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], 'r', lazy.spawn('rofi -show drun')),
     Key([mod], 'q', lazy.spawn('rofi -show')),
     Key([mod], 'e', lazy.spawn('dolphin')),
+    Key([mod], 'z', lazy.spawn('pactl set-sink-volume @DEFAULT_SINK@ +5%')),
+    Key([mod], 'x', lazy.spawn('pactl set-sink-volume @DEFAULT_SINK@ -5%')),
+    Key([mod], 'c', lazy.spawn('pactl set-sink-mute @DEFAULT_SINK@ toggle')),    
 ]
