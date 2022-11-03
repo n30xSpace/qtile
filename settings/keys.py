@@ -38,7 +38,7 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], 'r', lazy.spawn('rofi -show drun')),
     Key([mod], 'q', lazy.spawn('rofi -show')),
-    Key([mod], 'e', lazy.spawn('dolphin')),
+    Key([mod], 'e', lazy.spawn('thunar')),
     Key([mod], 'z', lazy.spawn('pactl set-sink-volume @DEFAULT_SINK@ +5%')),
     Key([mod], 'x', lazy.spawn('pactl set-sink-volume @DEFAULT_SINK@ -5%')),
     Key([mod], 'c', lazy.spawn('pactl set-sink-mute @DEFAULT_SINK@ toggle')),    

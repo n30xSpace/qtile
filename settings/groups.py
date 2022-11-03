@@ -6,7 +6,7 @@ __groups = {
     2: Group("", matches=[Match(wm_class=["Code"])]),
     3: Group("", matches=[Match(wm_class=["Spotify"])]),
     4: Group("", matches=[Match(wm_class=["kitty"])]),
-    5: Group("MIX", matches=[Match(wm_class=["dolphin"])]),
+    5: Group("MIX", matches=[Match(wm_class=["thunar"])]),
 }
 groups = [__groups[i] for i in __groups]
 
