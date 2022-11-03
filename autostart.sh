@@ -1,6 +1,6 @@
 #!/bin/sh
 nitrogen --restore &
-picom --experimental-backend &
+picom &
 google-chrome &
 code &
 kitty &
