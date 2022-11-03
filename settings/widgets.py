@@ -20,13 +20,13 @@ def tri(fg="light", bg="dark"):
     return widget.TextBox(
         **base(fg, bg),
         text="", # Icon: nf-oct-triangle_left
-        fontsize=58,
-        padding=-9
+        fontsize=43,
+        padding=-4
     )
 
 screens = [
     Screen(
-        bottom=bar.Bar(
+        top=bar.Bar(
             [
                 widget.Spacer(),
                 widget.CurrentLayout(),
@@ -67,7 +67,7 @@ screens = [
                     format='%d/%m-%H:%M'
                     ),                                                 
             ],
-            30,
+            24,
             opacity=0.92,
         ),
     ),
