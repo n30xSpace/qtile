@@ -1,6 +1,6 @@
 # Qtile
 
-Requiere:
+cp -r qtile ~/.config
 
 git clone https://github.com/ryanoasis/nerd-fonts
 cd nerd-fonts
@@ -13,3 +13,5 @@ psutil
 pulsectl_asyncio
 rofi
 dunst
+thunar
+
